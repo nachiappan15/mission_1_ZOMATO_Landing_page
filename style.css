@@ -1,0 +1,78 @@
+/* mobile first layout */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color:#ebf2ff ;
+    font-family: 'Merriweather', serif;
+     
+}
+/* navbar */
+.navbar{
+    background-color: #fff;
+    box-shadow: grey  0 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.navbar__brand{
+    width: 100px;
+}
+.navbar__logo{
+    width: 100%;
+}
+.navbar__nav__items{
+ margin: 10px;
+}
+.button__primary{
+    background: linear-gradient(to right,#ff512f 0%,#dd2476 51%, #ff512f 100%);
+    border: none;
+    padding: 8px 16px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/*  total container */
+
+
+
+/* media Quries */
+
+/*  1. 768px  
+    2.1020px 
+    3. 1440px*/
+
+@media screen and (min-width:768px) {
+    .hero__container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .hero__image__container{
+        width: 50%;
+    }
+    .hero__description{
+        width: 50%;
+
+    }
+   
+}
+
+@media screen and (min-width:1200px) {
+    .nav__item{
+        padding:16px 32px ;
+        font-size: 16px;
+    }
+    .navbar{
+        padding: 0 48px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+  
+}
