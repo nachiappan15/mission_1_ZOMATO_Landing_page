@@ -466,6 +466,10 @@ footer {
     .icon__holder{
         display: none;
     }
+    #hidden__menu{
+        display: none;
+    }
+
     .navbar {
         padding: 0 48px;
     }
