@@ -7,6 +7,7 @@
 body{
     background-color:#ebf2ff ;
     font-family: 'Merriweather', serif;
+    color: #1d3557;
      
 }
 /* navbar */
@@ -36,10 +37,140 @@ body{
     border-radius: 6px;
     cursor: pointer;
 }
-
+section{
+    margin: 48px 0 64px;
+}
 
 /*  total container */
+.container{
+    width: 100%;
+    padding:0  15px;
+}
+.hero__container{
+    min-height: 95vh;
+    margin-top: 1rem;
+    width: 100%;
+   
 
+}
+.hero__image__container{
+   min-height: 370px;
+   max-height: 735px;
+    position: relative;
+    width: 100%;
+
+}
+.hero__image{
+    width: 100%;
+    border-radius: 6px;
+
+}
+
+
+.hero__text{
+    line-height: 2.25rem;
+    font-weight: 900;
+    font-size: 30px;
+    
+
+}
+.hero__button{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* explorer menu section */
+.explore{
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.explore__heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+.menu__card{
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 1rem;
+    background-color: #fff;
+    box-shadow: grey  0 0 10px 0;
+}
+.card__image__holder{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.card__image{
+    width: 100%;
+}
+.menu__item__name{
+    margin-bottom: .5rem;
+
+}
+.menu__description{
+    padding: 16px;
+}
+.text-red{
+    color: red;
+}
+.explore__menu__button{
+    width: 100%;
+    margin: 2rem 0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+/* restaurant section */
+
+.restaurant__description{
+    font-size: 1.9rem;
+    font-weight: 1000;
+    line-height: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.gridded__image{
+    width: 100%;
+}
+.flex1{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    
+}
+.flex2{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+
+
+}
+.grid__image__container{
+    width: 50%;
+    position: relative;
+}
+.grid__image__container> img{
+    width: 100%;
+    margin: 0 5px;
+    border-radius: 6px;
+}
+
+#top__shrink{
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+}
+#bottom__shrink{
+    height: 80%;
+    position: absolute;
+    top: 0;
+}
 
 
 /* media Quries */
@@ -50,20 +181,86 @@ body{
 
 @media screen and (min-width:768px) {
     .hero__container{
+        height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
+        gap: 15;
     }
     .hero__image__container{
-        width: 50%;
+        height: 100%;
+        width: 60%;
     }
     .hero__description{
-        width: 50%;
-
+        height: 100%;
+        width: 40%;
     }
+    .hero__text{
+        text-align: left;
+    }
+
+
+    /* explorer section */
+    .explore{
+        position: relative;
+       
+    }
+  
+    .explore__menu__list{
+        margin: 0 auto;
+        margin-top: 2rem;
+        display: flex;
+        gap: 15px;
+        padding: 0 10px;
+    }
+    .explore__background{
+        position: absolute;
+        top:0%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background: linear-gradient(to right,#ff512f 0%,#dd2476 51%, #ff512f 100%);
+        transform: skewy(-3deg);
+    }
+   #higher{
+       margin-top: -10px;
+       margin-bottom: 10px;
+   }
+
    
+/* restaurant section */
+.restaurant{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.restaurant__description{
+    height: 100%;
+    width: 50%;
+}
+.gridded__image{
+    height: 100%;
+    width: 50%;
+}
+.restaurant__description{
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+
+
 }
 
 @media screen and (min-width:1200px) {
+
+    section{
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
     .nav__item{
         padding:16px 32px ;
         font-size: 16px;
@@ -71,6 +268,34 @@ body{
     .navbar{
         padding: 0 48px;
     }
+
+     .hero__container{
+    
+        margin: 1rem auto;
+    }
+     .hero__image__container{
+        height: 100%;
+        width: 50%;
+    }
+    .hero__description{
+        height: 100%;
+        width: 50%;
+    }
+    .hero__text{
+        font-size: 48px;
+        line-height: 3rem
+    }
+    .hero__button{
+        padding: 16px 32px ;
+    }
+
+    .explore__heading{
+       
+        font-size: 38px;
+        
+    }
+    
+    
 }
 
 @media screen and (min-width:1440px) {
